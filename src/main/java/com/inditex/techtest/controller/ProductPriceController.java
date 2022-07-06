@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @RestController
 public class ProductPriceController {
 
-    static final String URI_PRODUCT_PRICE = "/product/price";
+    public static final String URI_PRODUCT_PRICE = "/product/price";
 
     private final ProductPriceService service;
     private final ProductPriceMapper mapper = new ProductPriceMapper();

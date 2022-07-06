@@ -1,6 +1,5 @@
-package com.inditex.techtest.controller;
+package com.inditex.techtest;
 
-import com.inditex.techtest.Application;
 import com.inditex.techtest.controller.base.ErrorResponse;
 import com.inditex.techtest.controller.dto.ProductPriceDto;
 import org.junit.jupiter.api.Test;
@@ -22,8 +21,8 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.OK;
 
-@SpringBootTest(classes = Application.class, webEnvironment = RANDOM_PORT)
-class ProductPriceEntityControllerIT {
+@SpringBootTest(webEnvironment = RANDOM_PORT)
+class ProductPriceIT {
 
     private static final String URI = URI_PRODUCT_PRICE + "?brandId=1&productId=35455&dateTime=";
     private static final String SERVER = "http://localhost:";
